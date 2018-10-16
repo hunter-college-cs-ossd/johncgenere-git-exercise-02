@@ -45,12 +45,16 @@ typedef ostream& (*output_function) (ostream & out);
 
 ******************************************************************************/
 
+// serves as an introductory line before the N lines of oddity
 ostream& lineBeforeOddity(ostream &out);
+
+// prints out an oddity choosen from the oddities.txt file
 ostream& johncgenere_oddity(ostream &out);
 ostream& gutierrezjdr_oddity(ostream &out);
 
 int main(int argc, char* argv[])
 {
+    // Call to introductory line
     lineBeforeOddity(cout);
     // Calls to output functions
     johncgenere_oddity(cout);
@@ -59,16 +63,20 @@ int main(int argc, char* argv[])
    return 0;
 }
 
+// serves as an introductory line before the N lines of oddity
 ostream& lineBeforeOddity(ostream &out){
     out << "This is a collection of strange but true facts:" << endl << endl;
     return out;
 }
+
 ostream&gutierrezjdr_oddity (ostream & out)
 {
 	out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
 	
 	return out;
 } 
+
+// prints out an oddity choosen from the oddities.txt file
 ostream& johncgenere_oddity(ostream &out){
     out << "Why do we drive on parkways and park on driveways?" << endl;
     return out;
