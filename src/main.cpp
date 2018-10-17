@@ -52,6 +52,8 @@ ostream& lineBeforeOddity(ostream &out);
 ostream& johncgenere_oddity(ostream &out);
 ostream& gutierrezjdr_oddity(ostream &out);
 ostream& chocolate_spaghet_oddity(ostream &out);
+ostream& f0cus10_oddity(ostream &out);
+
 
 int main(int argc, char* argv[])
 {
@@ -59,9 +61,12 @@ int main(int argc, char* argv[])
     lineBeforeOddity(cout);
     // Calls to output functions
     johncgenere_oddity(cout);
-	gutierrezjdr_oddity(cout);
+    gutierrezjdr_oddity(cout);
     chocolate_spaghet_oddity(cout);
-   return 0;
+    gutierrezjdr_oddity(cout);
+    f0cus10_oddity(cout);
+  
+    return 0;
 }
 
 // serves as an introductory line before the N lines of oddity
@@ -86,4 +91,9 @@ ostream& johncgenere_oddity(ostream &out){
 ostream& chocolate_spaghet_oddity(ostream &out){
     out << "Why are cigarettes sold in gas stations when smoking is prohibited there?" << endl;
     return out;
+}
+
+ostream& f0cus10_oddity(ostream &out){
+	out << "You know how most packages say \"Open here\". What is the protocol if the package says, \"Open somewhere else\"?" << endl;
+	return out;
 }
