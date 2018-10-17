@@ -8,6 +8,9 @@
   Build with     : g++ -Wall -g -o oddities  main.cpp
   Modifications  : Added a introduction line before all of the oddities
                    Added johncgenere_oddity
+		   gutierrezjdr_oddity was added by gutierrezjdr
+		   f0cus10_oddity was added by f0cus10
+		   chocolate_spaghet_oddity by Chocolate-Spaghet
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
@@ -50,9 +53,9 @@ ostream& lineBeforeOddity(ostream &out);
 
 // prints out an oddity choosen from the oddities.txt file
 ostream& johncgenere_oddity(ostream &out);
-ostream& gutierrezjdr_oddity(ostream &out);
-ostream& chocolate_spaghet_oddity(ostream &out);
-ostream& f0cus10_oddity(ostream &out);
+ostream& gutierrezjdr_oddity(ostream &out);        // provided by gutierrezjdr
+ostream& chocolate_spaghet_oddity(ostream &out);   // provided by chocolate_spaghet
+ostream& f0cus10_oddity(ostream &out);		   // provided by f0cus10
 
 
 int main(int argc, char* argv[])
