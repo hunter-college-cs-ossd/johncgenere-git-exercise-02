@@ -51,6 +51,7 @@ ostream& lineBeforeOddity(ostream &out);
 // prints out an oddity choosen from the oddities.txt file
 ostream& johncgenere_oddity(ostream &out);
 ostream& gutierrezjdr_oddity(ostream &out);
+ostream& chocolate_spaghet_oddity(ostream &out);
 
 int main(int argc, char* argv[])
 {
@@ -59,7 +60,7 @@ int main(int argc, char* argv[])
     // Calls to output functions
     johncgenere_oddity(cout);
 	gutierrezjdr_oddity(cout);
-
+    chocolate_spaghet_oddity(cout);
    return 0;
 }
 
@@ -79,5 +80,10 @@ ostream&gutierrezjdr_oddity (ostream & out)
 // prints out an oddity choosen from the oddities.txt file
 ostream& johncgenere_oddity(ostream &out){
     out << "Why do we drive on parkways and park on driveways?" << endl;
+    return out;
+}
+
+ostream& chocolate_spaghet_oddity(ostream &out){
+    out << "Why are cigarettes sold in gas stations when smoking is prohibited there?" << endl;
     return out;
 }
